@@ -247,7 +247,6 @@ h2 {
 }
 .agent__block {
     justify-content: space-between;
-    margin-top: 90px;
 }
 .client-agent__title {
     font-size: 30px;
@@ -293,7 +292,6 @@ h2 {
 }
 .client__block {
     justify-content: space-between;
-    margin-top: 90px;
     display: none;
 }
 .client__block .client-agent__list li:nth-child(1){
@@ -320,24 +318,24 @@ h2 {
     width: 25%;
     position: relative;
 }
-.sales__switching li:after{
-    content: '';
+.sales__switching li .circleRed, .sales__switching li.active div {
+    width:30px;
+    height:30px;
+    background:#C90027;
+    bottom:-66px;
+    transform: translate(-15px);
+}
+.sales__switching li div {
     position: absolute;
     width: 20px;
     height: 20px;
     background: #FFF;
     border: 3px solid #C90027;
-    bottom: -62px;
+    bottom: -61px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-10px);
     border-radius: 50%;
     box-sizing: border-box;
-}
-.sales__switching li.active:after {
-    width: 30px;
-    height: 30px;
-    background: #C90027;
-    bottom: -67px;
 }
 .sales__block {
     padding: 90px 0;
