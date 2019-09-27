@@ -217,14 +217,23 @@ h2 {
     box-sizing: border-box;
     border-radius: 21px;
     margin: 0 20px;
+    position: relative;
 }
 .switching__link span{
+    position: absolute;
+    left: 3px;
+    top: -13px;
+    transform: translate(0, 50%);
     width: 32px;
     height: 32px;
     background: #C90027;
     border-radius: 50%;
     display: block;
-    margin: 3px;
+    cursor: pointer;
+}
+.clients-agent__block, .clients-client__block {
+    height: 470px;
+    justify-content: space-between;
 }
 .client-agent__item_middle {
     width: 46%;
@@ -294,10 +303,10 @@ h2 {
     justify-content: space-between;
     display: none;
 }
-.client__block .client-agent__list li:nth-child(1){
+.client-agent__list li:nth-child(1){
     display: none;
 }
-.client__block  .client-agent__btn {
+.client-agent__btn {
     padding: 18px 26px;
 }
 
@@ -317,6 +326,7 @@ h2 {
 .sales__switching li {
     width: 25%;
     position: relative;
+    cursor: pointer;
 }
 .sales__switching li .circleRed, .sales__switching li.active div {
     width:30px;
