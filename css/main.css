@@ -49,6 +49,9 @@ h2 {
 .active{
     color: #C90027;
 }
+.buisness .active{
+    background: white;
+}
 
 /*-- Header --*/
 
@@ -451,36 +454,104 @@ h2 {
 /*-- Buisness_clients --*/
 .business-title {
     text-align: center;
+    margin: 0 0 140px;
 }
 .buisness_wrap{
     position: relative;
-    height: 615px;
+    height: 515px;
     background: linear-gradient(to right, rgba(201, 0, 39,0.6) , rgba(201, 0, 39,0.6)),
                 url(../img/buisness_bg.jpg) no-repeat -200px;
 }
-.buisness_img {
+.buisness_wrap:after {
     position: absolute;
+    content: "";
+    top: -18px;
+    right: 714px;
+    width: 4px;
+    height: 400px;
+    background: #FFF;
+    transform: rotate(24deg);
+}
+.buisness_slide_item_rectangle, .buisness_slide_item_img {
+    position: absolute;
+    width: 863px;
+    height: 628px;
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
 }
-.buisness_wrap::after {
-     position: absolute;
-     width: 773px;
-     height: 742px;
-     content: url("../img/Rectangle 10.2.png");
-     right: 237px;
-     top: 50%;
-     transform: translate(0, -50%);
- }
-.buisness_wrap::before {
-    position: absolute;
-    width: 5px;
-    height: 500px;
-    background: #FFF;
-    content: "";
-    right: 866px;
-    top: -23px;
-    transform: rotate(24deg);
+.buisness_slide_item_rectangle {
     z-index: 1;
 }
+.buisness_slide_item_img{
+    width: auto;
+    height: 568px;
+}
+.buisness_rectangle, .buisness_img {
+    max-height: 100%;
+}
+.buisness_rectangle {
+    margin-left: 30px;
+}
+.buisness_clients_wrap, .buisness_agent_wrap {
+    padding-top: 93px;
+}
+.buisness_clients {
+    margin-top: 90px;
+}
+.buisness_clients-title {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-left: 150px;
+}
+.buisness_clients-title span {
+    position: absolute;
+    background: url("../img/buisness_group.png");
+    width: 136px;
+    height: 132px;
+    left: -150px;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 2;
+}
+.buisness_agent_wrap .buisness_clients-title span {
+    background: url("../img/agents_group.png");
+    width: 114px;
+    height: 133px;
+}
+.buisness_clients-list {
+    width: 245px;
+}
+.buisness_clients-item {
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.buisness_clients-item div {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.buisness .specification__btn {
+    margin-top: 150px;
+}
+
+
+
