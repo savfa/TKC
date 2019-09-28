@@ -447,3 +447,40 @@ h2 {
 .documents__block .sales__list li:nth-child(4) {
     background: url(../img/support.png) no-repeat left 0 top 12px;
 }
+
+/*-- Buisness_clients --*/
+.business-title {
+    text-align: center;
+}
+.buisness_wrap{
+    position: relative;
+    height: 615px;
+    background: linear-gradient(to right, rgba(201, 0, 39,0.6) , rgba(201, 0, 39,0.6)),
+                url(../img/buisness_bg.jpg) no-repeat -200px;
+}
+.buisness_img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.buisness_wrap::after {
+     position: absolute;
+     width: 773px;
+     height: 742px;
+     content: url("../img/Rectangle 10.2.png");
+     right: 237px;
+     top: 50%;
+     transform: translate(0, -50%);
+ }
+.buisness_wrap::before {
+    position: absolute;
+    width: 5px;
+    height: 500px;
+    background: #FFF;
+    content: "";
+    right: 866px;
+    top: -23px;
+    transform: rotate(24deg);
+    z-index: 1;
+}
