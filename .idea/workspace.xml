@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="09732d86-68fe-4a49-a074-55024c8e87d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
@@ -10,6 +11,9 @@
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="09732d86-68fe-4a49-a074-55024c8e87d5" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,8 +181,12 @@
       <workItem from="1569563057526" duration="27665000" />
       <workItem from="1569599257235" duration="15053000" />
       <workItem from="1569667326665" duration="25009000" />
+<<<<<<< Updated upstream
       <workItem from="1569739834444" duration="1699000" />
       <workItem from="1569750059893" duration="8777000" />
+=======
+      <workItem from="1569759480457" duration="323000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
