@@ -459,14 +459,14 @@ h2 {
 }
 .business_wrap{
     position: relative;
-    height: 515px;
+    height: 540px;
     background: url(../img/business_bg.jpg) no-repeat;
 }
 .business_wrap:after {
     position: absolute;
     content: "";
     top: -18px;
-    right: 714px;
+    right: 737px;
     width: 4px;
     height: 400px;
     background: #FFF;
@@ -475,7 +475,7 @@ h2 {
 .business_slide_item_rectangle, .business_slide_item_img {
     position: absolute;
     width: 863px;
-    height: 628px;
+    height: 652px;
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
@@ -485,13 +485,10 @@ h2 {
 }
 .business_slide_item_img{
     width: auto;
-    height: 568px;
+    height: 592px;
 }
 .business_rectangle, .business_img {
     max-height: 100%;
-}
-.business_rectangle {
-    margin-left: 30px;
 }
 .business_clients_wrap, .business_agent_wrap {
     padding-top: 93px;
@@ -552,6 +549,18 @@ h2 {
 .business .specification__btn {
     margin-top: 150px;
 }
+.arrow_block {
+
+}
+.arrow_prev, .arrow_next {
+    cursor: pointer;
+}
+.arrow_prev {
+    margin-right: 50px;
+}
+.scale {
+    transform: scale(1.1);
+}
 
 /*Partners*/
 
@@ -567,12 +576,6 @@ h2 {
 }
 .partners__block li {
     margin-top: 50px;
-}
-
-/*-- About --*/
-
-.about {
-    padding: 130px 0;
 }
 
 /*-- Socblock --*/
@@ -607,6 +610,7 @@ h2 {
 
 /*-- About --*/
 .about {
+    padding: 130px 0;
     font-size: 18px;
     background: url(../img/about-img.png) no-repeat right top 285px,
     /*url(../img/Rectangle107.png) no-repeat right -50px top 280px,*/
