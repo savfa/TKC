@@ -11,14 +11,19 @@
 	<meta property="og:image" content="#" >
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="https://kit.fontawesome.com/0399343082.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header__nav d-flex">
-				<a href="/"><img src="img/logo.png" alt="Logo ТКС"></a>
-				<ul class="nav d-flex">
+				<div class="menu__trigger"><span class="menu__trigger__line"></span></div>
+				<a href="/" class="logo__link"><img src="img/logo.png" alt="Logo ТКС"></a>
+				<ul class="nav">
 					<li>
 						<a href="https://bilet.transclass.ru/ticket/step1.fs">
 							Купить билет
@@ -116,7 +121,7 @@
 	<section class="clients">
 		<div class="container">
 			<div class="switching d-flex">
-				<p class="switching__agent active-sw">Агентам</p>
+				<p class="switching__agent active">Агентам</p>
 				<p class="switching__link"><span></span></p>
 				<p class="switching__client">Корпоративным клиентам</p>
 			</div>
@@ -415,49 +420,49 @@
 			<h2>Партнеры</h2>
 			<ul class="partners__block">
 				<li>
-					<a href=""><img src="img/partners2.png" alt="partners"></a>
+					<a href="https://www.vertas.ru/" target="_blank"><img src="img/partners2.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners1.png" alt="partners"></a>
+					<a href="https://www.tutu.ru/" target="_blank"><img src="img/partners1.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners5.png" alt="partners"></a>
+					<a href="https://www.ufs-online.ru/" target="_blank"><img src="img/partners5.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners6.png" alt="partners"></a>
+					<a href="http://lavana.ru/" target="_blank"><img src="img/partners6.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners14.png" alt="partners"></a>
+					<a href="http://www.belkatour.ru/" target="_blank"><img src="img/partners14.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners11.png" alt="partners"></a>
+					<a href="http://tavsvolga.ru/" target="_blank"><img src="img/partners11.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners8.png" alt="partners"></a>
+					<a href="https://maximice.ru/" target="_blank"><img src="img/partners8.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners15.png" alt="partners"></a>
+					<a href="https://www.tch.ru/ru-ru/Pages/Home.aspx" target="_blank"><img src="img/partners15.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners4.png" alt="partners"></a>
+					<a href="http://www.demlink.ru/" target="_blank"><img src="img/partners4.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners3.png" alt="partners"></a>
+					<a href="http://www.tas27.ru/" target="_blank"><img src="img/partners3.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners7.png" alt="partners"></a>
+					<a href="https://www.lernidee.de/" target="_blank"><img src="img/partners7.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners13.png" alt="partners"></a>
+					<a href="http://www.skyland.su/" target="_blank"><img src="img/partners13.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners12.png" alt="partners"></a>
+					<a href="http://rzdtour.com/" target="_blank"><img src="img/partners12.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners10.png" alt="partners"></a>
+					<a href="https://teletrain.ru/" target="_blank"><img src="img/partners10.png" alt="partners"></a>
 				</li>
 				<li>
-					<a href=""><img src="img/partners9.png" alt="partners"></a>
+					<a href="http://eurasiatrains.com/" target="_blank"><img src="img/partners9.png" alt="partners"></a>
 				</li>
 			</ul>
 		</div>
@@ -465,16 +470,91 @@
 	<section class="about">
 		<div class="container">
 			<h2>О нас</h2>
-			<p class="about__title-block">Мы отвечаем за КОМФОРТНОЕ путешествие своих гостей БОЛЕЕ 13 ЛЕТ.</p>
-			<p class="about__text">Современные вагоны ж/д перевозчика ТКС - это всегда вежливый персонал, удобные купе, ТВ-плазмы, WI-FI, дорожный набор, ассортимент блюд в меню, сервис для детей и родителей, возможность путешествия с домашними питомцами.</p>
-			<ul class="about__list">
-				<li>5 классов обслуживания<br>
-					(от «Эконом» до «Все включено»)
-				</li>
-				<li>17 маршрутов и 150 фирменных вагонов</li>
-				<li>Билеты в продаже за 90 суток на сайте ТКС без комиссии</li>
-				<li>Бонусная программа для постоянных гостей</li>
-			</ul>
+		</div>
+		<div class="about__wrap">
+			<div class="container">
+				<div class="about__block d-flex">
+					<div class="about__left">
+						<p class="about__title-block">Мы отвечаем за КОМФОРТНОЕ путешествие своих гостей БОЛЕЕ 13 ЛЕТ.</p>
+						<p class="about__text">Современные вагоны ж/д перевозчика ТКС - это всегда вежливый персонал, удобные купе, ТВ-плазмы, WI-FI, дорожный набор, ассортимент блюд в меню, сервис для детей и родителей, возможность путешествия с домашними питомцами.</p>
+						<ul class="about__list">
+							<li>5 классов обслуживания<br>
+								(от «Эконом» до «Все включено»)
+							</li>
+							<li>17 маршрутов и 150 фирменных вагонов</li>
+							<li>Билеты в продаже за 90 суток на сайте ТКС без комиссии</li>
+							<li>Бонусная программа для постоянных гостей</li>
+						</ul>
+					</div>
+					<div class="about__right">
+						<img src="img/about-img.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<h2 class="reviews__title">Отзывы</h2>
+			<div class="reviews__switching-list d-flex">
+				<a data-slider_class="slider__agent" class="reviews__agent active">Агентов</a>
+				<a data-slider_class="slider__client" class="reviews__client">Корпоративных клиентов</a>
+			</div>
+            <div class="reviews__slider slider__agent">
+               <div class="reviews__items">
+                   <div class="reviews__block d-flex">
+                       <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                       <p>Алексей</p>
+                   </div>
+                   <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                       Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+               </div>
+                <div class="reviews__items">
+                    <div class="reviews__block d-flex">
+                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                        <p>Алексей</p>
+                    </div>
+                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+                </div>
+                <div class="reviews__items">
+                    <div class="reviews__block d-flex">
+                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                        <p>Алексей</p>
+                    </div>
+                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+                </div>
+            </div>
+            <div class="reviews__slider slider__client">
+                <div class="reviews__items">
+                    <div class="reviews__block d-flex">
+                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                        <p>Алексей</p>
+                    </div>
+                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+                </div>
+                <div class="reviews__items">
+                    <div class="reviews__block d-flex">
+                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                        <p>Алексей</p>
+                    </div>
+                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+                </div>
+                <div class="reviews__items">
+                    <div class="reviews__block d-flex">
+                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
+                        <p>Алексей</p>
+                    </div>
+                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
+                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
+                </div>
+            </div>
+			<a href="#" class="btn reviews__btn">
+				Присоединиться к программе
+			</a>
 		</div>
 	</section>
 	<section class="socblock">
@@ -488,14 +568,57 @@
 				<p class="socblock__text">Участвуйте в конкурсах, выигрывайте бонусные баллы и промокоды.
 				</p>
 			<div class="socblock__wrap">
-				<a href="https://www.facebook.com/transclass.official" target="_blank" class="socblock__item socblock__item-facebook"></a>
-				<a href="https://vk.com/tkc_official" target="_blank" class="socblock__item socblock__item-vk"></a>
-				<a href="https://www.instagram.com/tkc_official/" target="_blank" class="socblock__item socblock__item-instagram"></a>
-				<a href="https://www.youtube.com/channel/UCZlSG81vbleeY3gQcRAZWgA" target="_blank" class="socblock__item socblock__item-youtube"></a>
+				<a href="https://www.facebook.com/transclass.official" target="_blank" class="socblock__item"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://vk.com/tkc_official" target="_blank" class="socblock__item"><i class="fab fa-vk"></i></a>
+				<a href="https://www.instagram.com/tkc_official/" target="_blank" class="socblock__item"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UCZlSG81vbleeY3gQcRAZWgA" target="_blank" class="socblock__item"><i class="fab fa-youtube"></i></a>
 			</div>
 		</div>
 	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__block d-flex">
+				<div>
+					<div class="logo logo-footer">
+						<a href="/">
+							<img src="img/footer-logo.png" alt="">
+						</a>
+					</div>
+					<div class="footer__phone">
+						8 800 100 93 99
+						<div class="footer__phone__text">Бесплатно по России</div>
+					</div>
+					<a href="https://www.transclass.ru/upload/personal_info_tkc.pdf" target="_blank" class="footer__link footer__link-policy">Политика по обработке и защите персональных данных</a>
+				</div>
+				<div class="">
+					<div><a href="https://bilet.transclass.ru/ticket/step1.fs" class="footer__link">Купить билет</a></div>
+					<div><a href="https://www.transclass.ru/wagon/" class="footer__link">Фирменные вагоны</a></div>
+					<div><a href="https://www.transclass.ru/services/" class="footer__link">Сервис</a></div>
+					<div><a href="https://www.transclass.ru/routes/" class="footer__link">Направления</a></div>
+					<div><a href="https://www.transclass.ru/offers/bonus/" class="footer__link">Бонусная программа</a></div>
+				</div>
+				<div class="">
+					<div><a href="https://www.transclass.ru/passengers/" class="footer__link">Гостям</a></div>
+					<div><a href="https://www.transclass.ru/passengers/pravila-perevozok/#passage" class="footer__link">Правила проезда в вагонах ТКС</a></div>
+					<div><a href="https://www.transclass.ru/passengers/pravila-perevozok/#pets" class="footer__link">Правила поездки с животными</a></div>
+					<div><a href="https://www.transclass.ru/passengers/pravila-perevozok/#kids" class="footer__link">Правила поездки с детьми</a></div>
+				</div>
+				<div class="">
+					<div><a href="https://www.transclass.ru/travel/" class="footer__link">Путешествия</a></div>
+					<div><a href="https://www.transclass.ru/passengers/vozvrat-bileta/" class="footer__link">Возврат билета</a></div>
+					<div><a href="https://www.transclass.ru/passengers/insurance/" class="footer__link">Страхование</a></div>
+					<div><a href="https://www.transclass.ru/passengers/faq/" class="footer__link">Полезная информация</a></div>
+				</div>
+				<div class="">
+					<div><a href="https://www.transclass.ru/press-center/" class="footer__link">Пресс-центр</a></div>
+					<div><a href="https://www.transclass.ru/about/" class="footer__link">О компании</a></div>
+					<div><a href="https://www.transclass.ru/contacts/" class="footer__link">Контакты</a></div>
+					<div><a href="https://www.transclass.ru/work/vacancies/" class="footer__link">Вакансии</a></div>
+				</div>
+			</div>
+	</footer>
 <script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

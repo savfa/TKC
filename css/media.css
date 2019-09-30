@@ -1,0 +1,78 @@
+/* Media Queries */
+
+@media screen and (max-width: 1675px) {
+    .about {
+        background: url(../img/Rectangle113.png) no-repeat left -125px top 285px,
+        url(../img/Rectangle106.png) no-repeat left -100px top 195px;
+    }
+    .work {
+        background: url(../img/Rectangle107.png) no-repeat right -150px top 280px,
+        url(../img/Rectangle109.png) no-repeat right -120px top -100px,
+        url(../img/Rectangle108.png) no-repeat left -100px top 420px,
+        url(../img/Rectangle1010.png) no-repeat left -140px top 280px;
+    }
+    .clients {
+        background-size: 90%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .about, .work {
+        background: none;
+    }
+    .about__right {
+        top:50%;
+    }
+    .partners {
+        padding: 140px 0 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    .main__content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slick-next {
+        right: 0;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    .menu__trigger {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .logo__link {
+        margin-right: auto;
+    }
+    .nav {
+        position: absolute;
+        top: 93px;
+        width: 100%;
+        left: 0;
+        background: #fff;
+    }
+    .nav li {
+        padding: 16px 30px;
+        width: 100%;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .nav a {
+        color: #000;
+    }
+    .clients {
+        background-size: 70%;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .about__right {
+        display: none;
+    }
+    .about__list li {
+        width: 100%;
+    }
+}

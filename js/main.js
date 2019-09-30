@@ -11,11 +11,15 @@ $(function () {
             clientsClientBlock.hide();
             clientsAgentBlock.fadeIn().css({'display':'flex', 'height':'470px'});
             train.animate({'backgroundPositionX':'-680px'},1500);
+            $('.switching__client').removeClass('active');
+            $('.switching__agent').addClass('active');
         } else {   // show Clients
             $(this).animate({'left':'35px'},500);
             clientsAgentBlock.hide();
             clientsClientBlock.fadeIn().css({'display':'flex', 'height':'470px'});
             train.animate({'backgroundPositionX':'1500px'},1500);
+            $('.switching__agent').removeClass('active');
+            $('.switching__client').addClass('active');
         }
     });
 
@@ -105,5 +109,32 @@ $(function () {
         $(this).find('div').addClass('active');
         $('.business_img').attr('src','img/'+toImg+'.png');
         currentSlide = imgNameArray.indexOf( toImg);
+    });
+
+    //reviews slider
+    $('.reviews__slider').slick({
+        infinite: true,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/left-red.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/right-red.png"></button>',
+    });
+
+
+    //reviews slider switching
+    $('.reviews__slider').hide();
+    $('.slider__agent').show();
+    $('.reviews__switching-list a').on('click', function(e) {
+        e.preventDefault;
+        $(this).addClass('active');
+        $('.reviews__switching-list a').not(this).removeClass('active');
+        var slider = $(this).attr('data-slider_class');
+        $('.reviews__slider').hide();
+        $('.'+slider).show();
+    });
+
+    //menu
+    $(".menu__trigger__line").click(function(e){
+        $(this).toggleClass('is-active');
+        $(".nav").slideToggle("slow");
     });
 });
