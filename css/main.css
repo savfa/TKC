@@ -120,7 +120,7 @@ h2 {
 .menu__trigger__line.is-active {
     background: none;
 }
-.menu__trigger__line.is-active:before, ..menu__trigger__line.is-active:after {
+.menu__trigger__line.is-active:before, .menu__trigger__line.is-active:after {
     transition-delay: 0s,0.3s;
 }
 .menu__trigger__line.is-active:before {
@@ -759,9 +759,9 @@ padding: 50px 0 120px;
 .slick-dots li {
     margin: 0 12px;
 }
-.slider__client {
+/*.slider__client {
     display: none;
-}
+}*/
 
 /*-- Socblock --*/
 

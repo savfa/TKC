@@ -112,24 +112,30 @@ $(function () {
     });
 
     //reviews slider
-    $('.reviews__slider').slick({
+    var option = {
         infinite: true,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/left-red.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/right-red.png"></button>',
-    });
-
+    };
+    $('.slider__agent').slick(option);
+    $('.slider__client').hide();
 
     //reviews slider switching
-    $('.reviews__slider').hide();
-    $('.slider__agent').show();
+
     $('.reviews__switching-list a').on('click', function(e) {
         e.preventDefault;
+        let whoSlider = $(this).attr('data-slider_class');
         $(this).addClass('active');
         $('.reviews__switching-list a').not(this).removeClass('active');
-        var slider = $(this).attr('data-slider_class');
-        $('.reviews__slider').hide();
-        $('.'+slider).show();
+    if(whoSlider == 'slider__agent') {
+        $('.slider__client').slick('unslick').hide();
+        $('.slider__agent').slick(option).show();
+    }
+        if(whoSlider == 'slider__client') {
+            $('.slider__agent').slick('unslick').hide();
+            $('.slider__client').slick(option).show();
+        }
     });
 
     //menu
