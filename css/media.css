@@ -14,16 +14,30 @@
     .clients {
         background-size: 90%;
     }
+    .main__content {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 1440px) {
     .about, .work {
         background: none;
     }
     .about__right {
-        top:50%;
+        max-width: 100%;
+        width: 650px;
     }
     .partners {
         padding: 140px 0 0;
+    }
+    .business_slide_item_rectangle img, .business_slide_item_img img {
+        max-width: 100%;
+    }
+    .business_slide_item_rectangle {
+        width: 688px;
+    }
+    .business_slide_item_img {
+        width: 700px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -32,7 +46,6 @@
     }
     .main__content {
         width: 80%;
-        margin: 0 auto;
     }
     .slick-next {
         right: 0;
@@ -55,10 +68,11 @@
         width: 100%;
         left: 0;
         background: #fff;
+        z-index: 3;
     }
     .nav li {
         padding: 16px 30px;
-        width: 100%;
+        width: auto;
         border-bottom: 1px solid #d6d6d6;
     }
     .nav a {
@@ -67,12 +81,398 @@
     .clients {
         background-size: 70%;
     }
+    .specification__bg {
+        background-size: 400px;
+    }
+    .specification__right {
+        margin-top: 120px;
+    }
+    .business_slide_item_img {
+        width: 550px;
+    }
+    .business_slide_item_rectangle {
+        width: 535px;
+    }
+    .about__right {
+        width: 455px;
+    }
 }
 @media screen and (max-width: 1140px) {
-    .about__right {
-        display: none;
+    .container {
+        width: 95%;
     }
     .about__list li {
         width: 100%;
+    }
+    .slick-next {
+        right: 25px;
+    }
+    .slick-prev {
+        left: 20px;
+    }
+    .sales__items:nth-child(2) {
+        display: none;
+    }
+    .sales__items {
+        width: 50%;
+    }
+    .client-agent__list li {
+        width: auto;
+    }
+    .client-agent__item_middle {
+        width: 37%;
+        padding: 0 15px;
+    }
+    .partners__block {
+        margin: 50px 0;
+        padding-bottom: 50px;
+    }
+    .partners {
+        padding: 80px 0 0;
+    }
+    .about {
+        padding: 100px 0;
+    }
+    .reviews {
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .business_slide_item_img {
+        width: 515px;
+    }
+    .business_slide_item_rectangle {
+        width: 500px;
+    }
+    .about__right {
+        width: 415px;
+    }
+    .sales {
+        padding: 80px 0 0;
+    }
+}
+@media screen and (max-width: 991px){
+    .main__content {
+        width: 100%;
+        background: #C90027;
+        padding: 35px 0;
+    }
+    .main__content:before {
+        display: none;
+    }
+    .main {
+        background: url(../img/header-bg.jpg) no-repeat top -180px center;
+        padding: 390px 0 50px;
+    }
+    .reviews__text {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 940px){
+    .container {
+        width: 90%;
+    }
+    .specification__left p:after, .client-agent__item_middle:after, .client-agent__item_middle:before {
+        display: none;
+    }
+    .specification__right {
+        margin-top: 320px;
+        justify-content: flex-start;
+    }
+    .specification__left p, .specification__right p, .client-agent__text {
+        width: 100%;
+    }
+    .specification__bg {
+        padding: 80px 0 0;
+        background: url(../img/man.png) no-repeat top 160px left, url(../img/man2.png) no-repeat bottom 155px left;
+    }
+    .specification__btn {
+        margin-top: 400px;
+    }
+    .work {
+        padding: 110px 0;
+        margin-top: 0;
+    }
+    .clients {
+        background: none;
+    }
+    .work__list li {
+        width: 30%;
+    }
+    .work__list-text {
+        height: 120px;
+    }
+    .client-agent__item {
+        width: 100%;
+    }
+    .clients-agent__block, .clients-client__block {
+        height: auto;
+        flex-direction: column;
+    }
+    .client-agent__item:nth-child(1) {
+        order: 3;
+        margin-top: 30px;
+    }
+    .client-agent__item:nth-child(3) {
+        margin-top: 15px;
+    }
+    .clients {
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    .business_slide_item_rectangle {
+        width: 305px;
+    }
+    .business_slide_item_img {
+        width: 320px;
+    }
+    .about__right {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 768px){
+    .main .container, .work__list li, .business_clients-list, .main__text, .about__text, .about__title-block {
+        width: 100%;
+    }
+    .main__btn-block .btn {
+        margin: 30px 8px;
+    }
+    .work__list-text::after, .business_slide_item_rectangle, .business_slide_item_img, .about__right {
+      display: none;
+    }
+    .work__list {
+        flex-direction: column;
+    }
+    .work__list-text {
+        height: auto;
+    }
+    .work__list-num {
+        margin-top: 0;
+    }
+    .about__title-block {
+        margin: 50px 0 20px;
+    }
+    .reviews {
+        padding: 0;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        left: 5px;
+    }
+    .footer {
+        display: none;
+    }
+    .socblock {
+        margin-bottom: 50px;
+    }
+    .main {
+        background-size: cover;
+    }
+    .main__title {
+        font-size: 34px;
+    }
+    .main__block {
+        background: #fff;
+    }
+    .partners__block {
+        padding-bottom: 70px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .main__btn-block {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .main__btn-block .btn {
+        margin: 10px auto;
+        width: 300px;
+        text-align: center;
+    }
+    .specification__bg {
+        padding: 0;
+        background: url(../img/man.png) no-repeat top 140px left,
+        url(../img/man2.png) no-repeat bottom 155px left;
+    }
+    .clients-agent__block, .clients-client__block {
+        height: auto !important;
+    }
+    .sales {
+        padding-top: 20px;
+    }
+    .switching {
+        flex-wrap: wrap;
+        width: 400px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .switching__agent {
+        order: 2;
+    }
+    .switching__client {
+        order: 3;
+        width: 230px;
+        margin-left: auto;
+        margin-top: -28px;
+        padding-left: 10px;
+    }
+    .switching__link {
+        transform: rotate(90deg);
+        margin: 70px 0 0;
+    }
+    .reviews__text {
+        width: 100%;
+    }
+    .switching {
+        margin-left: 30px;
+    }
+    .sales__switching {
+        border-bottom: none;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    .sales__switching li {
+        width: 15%;
+    }
+    .sales__switching li p {
+        display: none;
+    }
+    .sales__switching li.active div {
+        bottom: -5px;
+    }
+    .sales__switching li div {
+        bottom: 0;
+        background: rgba(201, 0, 39, 0.4);
+        border: none;
+    }
+    .sales__items {
+        width: 100%;
+    }
+    .sales__items:nth-child(1){
+        margin-bottom: 30px;
+    }
+    .sales__block {
+       flex-wrap: wrap;
+    }
+    .business_clients {
+        margin-top: 55px;
+    }
+    h2 {
+          font-size: 40px;
+    }
+    .about__list li {
+        width: auto;
+    }
+}
+@media screen and (max-width: 440px) {
+    .switching {
+        margin-left: 0;
+        justify-content: flex-start;
+        font-size: 18px;
+        width: 100%;
+    }
+    .switching__client {
+        margin-left: 65px;
+    }
+    .main {
+        background: url(../img/header-bg.jpg) no-repeat top -50px center;
+        padding: 200px 0 0;
+        background-size: 600px;
+    }
+    .main__title {
+        font-size: 24px;
+    }
+    .main__text {
+        font-size: 14px;
+    }
+    .specification__bg {
+        padding-top: 20px;
+        background: url(../img/man.png) no-repeat top 180px left, url(../img/man2.png) no-repeat bottom 155px left;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .work__list li {
+        text-align: center;
+    }
+    .business_wrap {
+        height: 100%;
+        background: url(../img/business_bg.jpg) no-repeat left -300px top;
+        padding: 0 0 50px;
+    }
+    .business_clients-title span {
+         width: 100px;
+         height: 100px;
+         background-size: 100px;
+        left: -120px;
+     }
+    .business_agent_wrap .business_clients-title span {
+        width: 85px;
+        height: 105px;
+        background-size: 85px;
+    }
+    .business_clients-title {
+        font-size: 28px;
+        margin-left: 120px;
+    }
+    .business_clients {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .business_clients-item {
+        margin-bottom: 10px;
+    }
+    .arrow_block {
+        margin-top: 20px;
+    }
+    .reviews__switching-list {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .reviews__switching-list a {
+        margin: 0 0 10px;
+    }
+    .socblock {
+        display: none;
+    }
+    .specification__btn, .reviews__btn {
+        width: auto;
+        text-align: center;
+        font-size: 19px;
+        padding: 18px 5px;
+    }
+    .sales__switching li.active div {
+        width: 20px;
+        height: 20px;
+        bottom: -3px;
+    }
+    .sales__switching li div {
+        width: 15px;
+        height: 15px;
+    }
+    .sales__block {
+        padding: 40px 0 80px;
+    }
+    .business .specification__btn {
+        margin-top: 50px;
+    }
+    .reviews__block {
+        flex-direction: column;
+    }
+    .reviews__img {
+        margin: 0 0 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .specification__bg {
+        background: url(../img/man.png) no-repeat top 220px left -100px, url(../img/man2.png) no-repeat bottom 155px left -55px;
+    }
+    .work {
+        padding: 80px 0 20px;
+    }
+    .reviews__switching-list a {
+        font-size: 23px;
     }
 }

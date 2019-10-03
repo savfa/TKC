@@ -117,6 +117,14 @@ $(function () {
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/left-red.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/right-red.png"></button>',
+        responsive: [
+            {
+                breakpoint: 577,
+                settings: {
+                    arrows: false
+                }
+            }
+            ]
     };
     $('.slider__agent').slick(option);
     $('.slider__client').hide();
@@ -142,5 +150,52 @@ $(function () {
     $(".menu__trigger__line").click(function(e){
         $(this).toggleClass('is-active');
         $(".nav").slideToggle("slow");
+    });
+
+    //partners slide min
+    $('.partners__block').slick({
+        responsive: [
+            {
+                breakpoint: 2561,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });
