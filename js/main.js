@@ -1,25 +1,36 @@
 $(function () {
 
+    //scroll to block
+    $("a.scroll-to").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+         }, 800);
+    });
+
     //clients toggle
     let clientsAgentBlock = $('.clients-agent__block');
     let clientsClientBlock = $('.clients-client__block');
     clientsClientBlock.hide();
     let train = $('.clients');
-    $('.switching__link span').on('click', function () {
-        if($(this).css('left') == '35px') {   // show Agents
-            $(this).animate({'left':'3px'},500);
+    var range = $('[type="range"]');
+    $(range).on('change', range, function () {
+        if($(this).val() === '0') {   // show Agents
+            console.log($(this).val());
             clientsClientBlock.hide();
             clientsAgentBlock.fadeIn().css({'display':'flex', 'height':'470px'});
             train.animate({'backgroundPositionX':'-680px'},1500);
             $('.switching__client').removeClass('active');
             $('.switching__agent').addClass('active');
         } else {   // show Clients
-            $(this).animate({'left':'35px'},500);
+           if($(this).val() === '1') {  
             clientsAgentBlock.hide();
             clientsClientBlock.fadeIn().css({'display':'flex', 'height':'470px'});
             train.animate({'backgroundPositionX':'1500px'},1500);
             $('.switching__agent').removeClass('active');
             $('.switching__client').addClass('active');
+            }
         }
     });
 

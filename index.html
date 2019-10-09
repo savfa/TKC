@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>ТКС железнодорожный перевозчик</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ТКС железнодорожный перевозчик</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="железнодорожный перевозчик">
 	<meta property="og:title" content="ТКС железнодорожный перевозчик">
@@ -71,7 +71,7 @@
 		</div>
 	</header>
 	<section class="main">
-		<div class="container container-main">
+		<div class="container">
 			<div class="main__block">
 				<div class="main__content">
 					<h1 class="main__title">Агентам & Корпоративным клиентам</h1>
@@ -80,9 +80,9 @@
 					</p>
 				</div>
 				<div class="main__btn-block d-flex">
-					<a href="#" class="btn">Начать работу</a>
-					<a href="#" class="btn">Система продаж ТКС</a>
-					<a href="#" class="btn">Регистрация</a>
+					<a href="#work" class="btn scroll-to">Начать работу</a>
+					<a href="#sales" class="btn scroll-to">Система продаж ТКС</a>
+					<a href="#program" class="btn scroll-to">Регистрация</a>
 				</div>
 			</div>
 		</div>
@@ -96,11 +96,11 @@
 				<div class="specification__right d-flex">
 					<p>Оформляйте заказы на билеты в фирменные вагоны ТКС для своих клиентов и сотрудников за несколько минут в удобном B2B интерфейсе системы продаж ТКС.</p>
 				</div>
-				<a href="#" class="btn specification__btn">Присоединиться к программе</a>
+				<a href="https://pbilet.transclass.ru/registration_partner.fs" class="btn specification__btn">Присоединиться к программе</a>
 			</div>
 		</div>
 	</section>
-	<section class="work">
+	<section id="work" class="work">
 		<div class="container">
 			<h2>Как начать работу</h2>
 			<ul class="work__list d-flex">
@@ -123,7 +123,8 @@
 		<div class="container">
 			<div class="switching d-flex">
 				<p class="switching__agent active">Агентам</p>
-				<p class="switching__link"><span></span></p>
+				<!-- <p class="switching__link"><span></span></p> -->
+				<input type="range" name="range" min="0" max="1" value="0" class="switching__link">
 				<p class="switching__client">Корпоративным клиентам</p>
 			</div>
 			<div class="clients-agent__block d-flex">
@@ -190,14 +191,18 @@
 			</div>
 		</div>
 	</section>
-	<section class="sales">
+	<section id="sales" class="sales">
 		<div class="container">
 			<h2>О системе продаж</h2>
 			<ul class="sales__switching d-flex">
-				<li class="sales__tickets active" data-show="tickets__block"><p>Система продаж электронных билетов ТКС</p><div></div></li>
-				<li class="agent__system" data-show="agent__block"><p>Система ТКС для<br> агентов</p><div></div></li>
-				<li class="client__system" data-show="client__block"><p>Система ТКС для<br> корпоративных клиентов</p><div></div></li>
-				<li class="documents" data-show="documents__block"><p>Документы и статистика</p><div></div></li>
+				<li class="sales__tickets active" data-show="tickets__block">
+					<p>Система продаж электронных билетов ТКС</p><div></div></li>
+				<li class="agent__system" data-show="agent__block">
+					<p>Система ТКС для<br> агентов</p><div></div></li>
+				<li class="client__system" data-show="client__block">
+					<p>Система ТКС для<br> корпоративных клиентов</p><div></div></li>
+				<li class="documents" data-show="documents__block">
+					<p>Документы и статистика</p><div></div></li>
 			</ul>
 			<div class="sales__block tickets__block">
 				<div class="sales__items">
@@ -413,7 +418,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<a href="#" class="btn specification__btn">Присоединиться к программе</a>
+			<a href="https://pbilet.transclass.ru/registration_partner.fs" class="btn specification__btn">Присоединиться к программе</a>
 		</div>
 	</section>
 	<section class="partners">
@@ -505,7 +510,7 @@
                <div class="reviews__items">
                    <div class="reviews__block d-flex">
                        <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
-                       <p>Алексей агент</p>
+                       <p>Алексей</p>
                    </div>
                    <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
                        Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
@@ -513,7 +518,7 @@
                 <div class="reviews__items">
                     <div class="reviews__block d-flex">
                         <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
-                        <p>Вася агент</p>
+                        <p>Алексей</p>
                     </div>
                     <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
                         Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
@@ -521,7 +526,7 @@
                 <div class="reviews__items">
                     <div class="reviews__block d-flex">
                         <img src="img/client-photo.png" alt="client-photo" class="reviews__img">
-                        <p>Иван агент</p>
+                        <p>Алексей</p>
                     </div>
                     <p class="reviews__text">Ехал в поезде Киров-Москва-Киров в вагоне 15 (СВ) очень доволен состоянием вагона и особенно обслуживанием. Вежливостью и компетентностью персона.
                         Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
@@ -553,7 +558,7 @@
                         Встречают и провожают с улыбкой! Хочу выразить благодарность Васильевых Алене и Бессолицыной Зинаиде. Девчонки молодцы!. Спасибо!</p>
                 </div>
             </div>
-			<a href="#" class="btn reviews__btn">
+			<a id="program" href="https://pbilet.transclass.ru/registration_partner.fs" class="btn reviews__btn">
 				Присоединиться к программе
 			</a>
 		</div>
@@ -617,7 +622,6 @@
 					<div><a href="https://www.transclass.ru/work/vacancies/" class="footer__link">Вакансии</a></div>
 				</div>
 			</div>
-		</div>
 	</footer>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
